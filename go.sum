@@ -3,8 +3,8 @@ cloud.google.com/go v0.34.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMT
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
-github.com/argoproj-labs/rollouts-gatewayapi-trafficrouter-plugin v0.0.3 h1:g8SFAGipWJzL/COQ5DJu5OEAmjmqqvDR2lMOPkvRcC4=
-github.com/argoproj-labs/rollouts-gatewayapi-trafficrouter-plugin v0.0.3/go.mod h1:ZasVBR6Vddu6ZpWJ8YhbQo115GxAF859pQqstDoE/d8=
+github.com/divyansh375/rollouts-gatewayapi-trafficrouter-plugin v0.0.3 h1:g8SFAGipWJzL/COQ5DJu5OEAmjmqqvDR2lMOPkvRcC4=
+github.com/divyansh375/rollouts-gatewayapi-trafficrouter-plugin v0.0.3/go.mod h1:ZasVBR6Vddu6ZpWJ8YhbQo115GxAF859pQqstDoE/d8=
 github.com/argoproj/argo-rollouts v1.4.0-rc1.0.20230310073321-5fef78a8e47b h1:CdxqiJBBseF3XWDdfeBPUOP3dzteaBeEOXTZgfdZFgA=
 github.com/argoproj/argo-rollouts v1.4.0-rc1.0.20230310073321-5fef78a8e47b/go.mod h1:d0cH4mUy+WWMMj5H/6hLC3PUT8voptVceiionLssU9U=
 github.com/buger/jsonparser v1.1.1/go.mod h1:6RYKKt7H4d4+iWqouImQ9R2FZql3VbhNgx27UK13J/0=

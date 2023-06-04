@@ -1,9 +1,9 @@
-module github.com/argoproj-labs/rollouts-plugin-trafficrouter-contour
+module github.com/divyansh375/rollouts-plugin-trafficrouter-contour
 
 go 1.19
 
 require (
-	github.com/argoproj-labs/rollouts-gatewayapi-trafficrouter-plugin v0.0.3
+	github.com/divyansh375/rollouts-gatewayapi-trafficrouter-plugin v0.0.3
 	github.com/argoproj/argo-rollouts v1.4.0-rc1.0.20230310073321-5fef78a8e47b
 	github.com/hashicorp/go-plugin v1.4.9
 	github.com/projectcontour/contour v1.24.2

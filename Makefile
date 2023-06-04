@@ -4,4 +4,4 @@ go_lint:
 
 .PHONY: build
 build:
-	CGO_ENABLED=0 GOOS=linux GOARCH=$(TARGETARCH) go build -o rollouts-plugin-trafficrouter-contour ./
+	CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -buildvcs=false -o rollouts-plugin-trafficrouter-contour ./
