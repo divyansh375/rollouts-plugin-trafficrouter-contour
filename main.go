@@ -107,6 +107,8 @@ func (r *RpcPlugin) SetWeight(
 		Must(errors.New("illegal parameter(s)"))
 	}
 
+	slog.Info("hello1")
+
 	ctx := context.Background()
 
 	ctr := ContourTrafficRouting{}
@@ -117,6 +119,9 @@ func (r *RpcPlugin) SetWeight(
 	unstr := Must1(r.dynamicClient.Resource(contourv1.HTTPProxyGVR).Namespace(rollout.Namespace).Get(ctx, ctr.HTTPProxy, metav1.GetOptions{}))
 	Must(runtime.DefaultUnstructuredConverter.FromUnstructured(unstr.UnstructuredContent(), &httpProxy))
 
+
+	slog.Info("hello2")
+
 	canarySvcName := rollout.Spec.Strategy.Canary.CanaryService
 	stableSvcName := rollout.Spec.Strategy.Canary.StableService
 
@@ -126,6 +131,8 @@ func (r *RpcPlugin) SetWeight(
 	services := Must1(getServiceList(httpProxy.Spec.Routes))
 	canarySvc := Must1(getService(canarySvcName, services))
 	stableSvc := Must1(getService(stableSvcName, services))
+
+	slog.Info("hello3")
 
 	slog.Debug("old weight", slog.Int64("canary", canarySvc.Weight), slog.Int64("stable", stableSvc.Weight))
 
@@ -140,6 +147,8 @@ func (r *RpcPlugin) SetWeight(
 		slog.Error("update the HTTPProxy is failed", slog.String("name", httpProxy.Name), slog.Any("err", err))
 		Must(err)
 	}
+
+	slog.Info("hello4")
 
 	if r.IsTest {
 
