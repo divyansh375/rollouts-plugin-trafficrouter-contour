@@ -3,16 +3,12 @@ module github.com/divyansh375/rollouts-plugin-trafficrouter-contour
 go 1.19
 
 require (
-	github.com/divyansh375/rollouts-gatewayapi-trafficrouter-plugin v0.0.3
 	github.com/argoproj/argo-rollouts v1.4.0-rc1.0.20230310073321-5fef78a8e47b
 	github.com/hashicorp/go-plugin v1.4.9
 	github.com/projectcontour/contour v1.24.2
-	github.com/sirupsen/logrus v1.9.0
-	github.com/stretchr/testify v1.8.2
 	golang.org/x/exp v0.0.0-20230321023759-10a507213a29
 	k8s.io/apimachinery v0.26.1
 	k8s.io/client-go v0.26.1
-	sigs.k8s.io/gateway-api v0.6.1
 )
 
 require (
@@ -38,7 +34,6 @@ require (
 
 require (
 	github.com/emicklei/go-restful/v3 v3.9.0 // indirect
-	github.com/evanphx/json-patch v5.6.0+incompatible // indirect
 	github.com/go-logr/logr v1.2.3 // indirect
 	github.com/go-openapi/jsonpointer v0.19.5 // indirect
 	github.com/go-openapi/jsonreference v0.20.0 // indirect
@@ -53,9 +48,6 @@ require (
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
-	github.com/pmezard/go-difflib v1.0.0 // indirect
 	golang.org/x/net v0.8.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
 	golang.org/x/text v0.8.0 // indirect
